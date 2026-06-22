@@ -64,6 +64,15 @@
             <span>${clockIcon} ${c.hours}h</span>
             <span>${usersIcon} ${c.students}K</span>
           </div>
+          <div class="course-progress">
+            <div class="progress-label">
+              <span>Overall Progress</span>
+              <span>${(c.title.length * 3) % 100}%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width:${(c.title.length * 3) % 100}%;"></div>
+            </div>
+          </div>
           <div class="course-inst">
             <img src="${c.instructorAvatar}" alt="${c.instructor}" loading="lazy" />
             <span>${c.instructor}</span>

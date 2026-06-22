@@ -31,8 +31,9 @@
   --i-800: #373c4b;
   --i-900: #1f2230;
   --i-950: #13151f;
-  --shadow-soft: 0 12px 40px -12px rgba(20, 45, 87, .12);
-  --shadow-card: 0 18px 50px -20px rgba(20, 45, 87, .18);
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 12px 24px -4px rgba(31, 34, 48, 0.12), 0 8px 16px -4px rgba(31, 34, 48, 0.08);
+  --border-subtle: rgba(31, 34, 48, 0.08);
   --radius: 1rem;
 }
 
@@ -77,6 +78,7 @@ h3 {
   font-family: 'Sora', system-ui, sans-serif;
   font-weight: 800;
   line-height: 1.15;
+  letter-spacing: -0.03em;
 }
 
 .container {
@@ -660,11 +662,13 @@ h3 {
 
 .float-card {
   position: absolute;
-  background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 0;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5), var(--shadow-card);
+  border-radius: 1.5rem;
   padding: 1rem;
-  box-shadow: var(--shadow-soft);
   animation: floaty 6s ease-in-out infinite;
 }
 
@@ -842,8 +846,9 @@ h3 {
   position: relative;
   overflow: hidden;
   background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  border-radius: 1.5rem;
   padding: 1.5rem;
   transition: all .3s;
 }
@@ -1055,15 +1060,16 @@ h3 {
 
 .feature {
   background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  border-radius: 1.5rem;
   padding: 1.25rem;
   transition: all .2s;
 }
 
 .feature:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-soft);
+  transform: translateY(-6px);
+  box-shadow: inset 0 0 0 1px var(--border-subtle), var(--shadow-card);
 }
 
 .feature-ico {
@@ -1164,15 +1170,16 @@ h3 {
   display: flex;
   flex-direction: column;
   background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  border-radius: 1.5rem;
   overflow: hidden;
   transition: all .3s;
 }
 
 .course:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-8px);
+  box-shadow: inset 0 0 0 1px var(--border-subtle), var(--shadow-card);
 }
 
 .course-img-wrap {
@@ -1275,7 +1282,39 @@ h3 {
 .course-stats span {
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: .3rem;
+}
+
+.course-progress {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--i-700);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.progress-track {
+  width: 100%;
+  height: 6px;
+  background: var(--i-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--p-600), var(--p-400));
+  border-radius: 999px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .course-inst {
@@ -1441,14 +1480,15 @@ h3 {
 .inst {
   overflow: hidden;
   background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  border-radius: 1.5rem;
   transition: all .3s;
 }
 
 .inst:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-8px);
+  box-shadow: inset 0 0 0 1px var(--border-subtle), var(--shadow-card);
 }
 
 .inst-img-wrap {
@@ -1581,15 +1621,16 @@ h3 {
   display: flex;
   flex-direction: column;
   background: #fff;
-  border: 1px solid var(--i-100);
-  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--border-subtle);
+  border-radius: 1.5rem;
   padding: 1.5rem;
-  transition: all .2s;
+  transition: all .3s;
 }
 
 .t-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-6px);
+  box-shadow: inset 0 0 0 1px var(--border-subtle), var(--shadow-card);
 }
 
 .t-quote {
