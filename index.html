@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMove — Education & LMS Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar" class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+            <img src="img/logo.png" alt="eduvess logo" />
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <div class="nav-item">
+            <a href="#home">Home</a>
+          </div>
+          <div class="nav-item has-sub">
+            <a href="#courses">Courses <span class="chev">▾</span></a>
+            <div class="dropdown">
+              <a href="#courses">All Courses</a>
+              <a href="#courses">Web Development</a>
+              <a href="#courses">UI/UX Design</a>
+              <a href="#courses">Data Science</a>
+              <a href="#courses">Business</a>
+            </div>
+          </div>
+          <div class="nav-item has-sub">
+            <a href="#about">Pages <span class="chev">▾</span></a>
+            <div class="dropdown">
+              <a href="#about">About Us</a>
+              <a href="#instructors">Instructors</a>
+              <a href="#testimonials">Pricing</a>
+              <a href="#contact">FAQ</a>
+            </div>
+          </div>
+          <div class="nav-item"><a href="#instructors">Instructors</a></div>
+          <div class="nav-item"><a href="#contact">Contact</a></div>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <a href="#login" class="link-login">Log in</a>
+          <a href="#signup" class="btn btn-primary">Sign up free</a>
+          <button id="menuToggle" class="menu-btn" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-blob hero-blob-a"></div>
+        <div class="hero-blob hero-blob-b"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+              #1 Online Learning Platform of 2026
+            </span>
+            <h1>Learn smarter,<br />move further with <span class="text-gradient">EduMove</span></h1>
+            <p>Join over 312,000 learners mastering in-demand skills through expert-led courses, hands-on projects, and a community that pushes you forward.</p>
+
+            <div class="hero-search">
+              <input type="text" placeholder="What do you want to learn today?" />
+              <button aria-label="Search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary">Browse courses</a>
+              <a href="#video" class="btn-video">
+                <span class="play-dot"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
+                Watch intro video
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <div class="avatars">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=80" alt="" />
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=80" alt="" />
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=80" alt="" />
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=80" alt="" />
+              </div>
+              <div class="hero-rating">
+                <div class="stars">★★★★★</div>
+                <p><b>50K+ reviews</b> from happy learners</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art">
+            <img src="https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Student learning online" class="hero-img" />
+            <div class="float-card float-card-a">
+              <span class="float-ico green"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <div><p class="float-big">312K+</p><p class="float-sm">Active learners</p></div>
+            </div>
+            <div class="float-card float-card-b">
+              <p class="float-sm">Course completion</p>
+              <div class="float-bar">
+                <span class="float-bar-big">99%</span>
+                <div class="bar-chart">
+                  <span style="height:40%"></span><span style="height:65%"></span><span style="height:35%"></span><span style="height:80%"></span><span style="height:55%"></span><span style="height:95%"></span>
+                </div>
+              </div>
+            </div>
+            <div class="float-card float-card-c">
+              <span class="chip chip-orange">★ 4.9</span>
+              <span class="float-sm">Top rated</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CATEGORIES ===== -->
+      <section id="categories" class="section">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow">Popular categories</span>
+            <h2>Explore trending skills</h2>
+            <p>Hand-picked course categories designed to prepare you for the jobs of tomorrow, taught by mentors who have been there.</p>
+          </div>
+
+          <div class="cat-grid" id="catGrid"></div>
+
+          <div class="brands">
+            <p class="brands-label">Trusted by teams & institutions worldwide</p>
+            <div class="brands-marquee">
+              <div class="brands-track" id="brandsTrack"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-art">
+            <div class="about-imgs">
+              <img class="img-tall" src="https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mentorship" />
+              <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Study group" />
+            </div>
+            <div class="about-badge">
+              <span class="about-play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg></span>
+              <div>
+                <p class="about-badge-title">Start learning in 2 minutes</p>
+                <p class="about-badge-sub">No credit card required to explore free lessons.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <span class="eyebrow">Why EduMove</span>
+            <h2>An end-to-end learning experience, not just video lectures</h2>
+            <p>EduMove brings structure, mentorship and community together so you never have to guess what to learn next. Every path is designed by educators who have trained thousands of professionals.</p>
+
+            <div class="feature-grid" id="featureGrid"></div>
+
+            <a href="#courses" class="btn btn-primary">Explore the platform</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== COURSES ===== -->
+      <section id="courses" class="section">
+        <div class="container">
+          <div class="courses-head">
+            <div>
+              <span class="eyebrow">Featured courses</span>
+              <h2>Most popular courses this month</h2>
+            </div>
+            <a href="#all" class="btn btn-ghost">View all courses</a>
+          </div>
+
+          <div class="filters" id="filters"></div>
+          <div class="course-grid" id="courseGrid"></div>
+        </div>
+      </section>
+
+      <!-- ===== STATS ===== -->
+      <section class="stats" id="stats">
+        <div class="stats-bg-grid"></div>
+        <div class="stats-blob stats-blob-a"></div>
+        <div class="stats-blob stats-blob-b"></div>
+        <div class="container stats-grid" id="statsGrid"></div>
+      </section>
+
+      <!-- ===== INSTRUCTORS ===== -->
+      <section id="instructors" class="section">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow">Meet the mentors</span>
+            <h2>Learn from world-class instructors</h2>
+            <p>Professionals from leading companies who teach what actually works in the real world.</p>
+          </div>
+          <div class="inst-grid" id="instGrid"></div>
+        </div>
+      </section>
+
+      <!-- ===== TESTIMONIALS ===== -->
+      <section id="testimonials" class="section testimonials">
+        <div class="t-blob"></div>
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow">Student stories</span>
+            <h2>Loved by 312,000+ learners worldwide</h2>
+            <p>Real outcomes from real students. Here's what they say after completing a path on EduMove.</p>
+          </div>
+          <div class="t-grid" id="tGrid"></div>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-bg-grid"></div>
+            <div class="cta-blob cta-blob-a"></div>
+            <div class="cta-blob cta-blob-b"></div>
+            <div class="cta-grid">
+              <div class="cta-copy">
+                <span class="cta-chip"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Newsletter</span>
+                <h2>Get weekly course drops & learning tips</h2>
+                <p>Join 50,000+ subscribers. No spam, just hand-picked courses and career advice. Unsubscribe anytime.</p>
+              </div>
+              <form class="cta-form" id="ctaForm">
+                <input type="email" id="ctaEmail" required placeholder="Enter your email address" />
+                <button type="submit" class="btn btn-accent" id="ctaBtn">Subscribe</button>
+              </form>
+              <p class="cta-note">We care about your data. Read our <a href="#privacy">Privacy Policy</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand footer-brand-link">
+            <img src="img/logo.png" alt="eduvess logo" />
+          </a>
+          <p>The modern learning platform built to help you move from curiosity to career. Learn from the best, at your own pace.</p>
+          <div class="footer-socials" id="footerSocials"></div>
+        </div>
+        <div class="footer-cols" id="footerCols"></div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 EduMove Inc. All rights reserved. Built with care for learners everywhere.</p>
+        <div class="footer-bottom-right">
+          <span>English (US)</span>
+          <a href="#home" class="back-top" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
